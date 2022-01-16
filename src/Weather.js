@@ -54,10 +54,13 @@ export default function Weather() {
           <li>Visibility: {weather.visibility}m</li>
         </ul>
       </div>
+    
+      
     );
   } else {
     return form;
   }
+  <p>test</p>
 } 
 
 
