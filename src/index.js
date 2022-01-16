@@ -5,7 +5,7 @@ import Weather from "./Weather";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <h2> Homework </h2>
+    <h2> Home </h2>
     <Weather />
   </StrictMode>,
   rootElement
