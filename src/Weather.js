@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import index from "./index.css";
+import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -44,6 +44,7 @@ export default function Weather() {
  
    if (received) {
     return (
+      <card>
       <div className="temperatureNow">
         {form}
         <h2>{city}</h2>
@@ -54,13 +55,12 @@ export default function Weather() {
           <li>Visibility: {weather.visibility}m</li>
         </ul>
       </div>
-    
+    </card>
       
     );
   } else {
     return form;
   }
-  <p>test</p>
 } 
 
 
