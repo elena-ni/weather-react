@@ -9,6 +9,13 @@ p {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 p:first-letter {
   text-transform: capitalize;
 }
@@ -43,9 +50,7 @@ hr {
   margin: 10px;
 }
 
-
-}
-.today .fas {
+.today {
   color: rgb(250, 222, 63);
   font-size: 100px;
   text-align: right;
@@ -85,7 +90,6 @@ img {
   margin-top: 10px;
 }
 
-
 .city .card {
   background-color: rgba(89, 106, 202, 0.3);
   border: solid 2px #596aca;
@@ -118,9 +122,7 @@ img {
   color: #596aca;
 }
 
-
-.searchfield
- {
+.searchfield {
   border: solid 2px #596aca;
   border-radius: 5px;
   padding: 5px;
