@@ -12,6 +12,8 @@ export default function Weather() {
   let [received, setReceived] = useState(false);
 
   let form = (
+    <Row  xs={2} md={4} lg={6}>
+      <Col>
     <form  onSubmit={handleSubmit}>
       <input className="searchfield"
         type="search"
@@ -20,6 +22,8 @@ export default function Weather() {
       />
       <input className="button" type="submit" value="search" />
     </form>
+    </Col>
+    </Row>
   );
 
   function handleSubmit(event) {
@@ -42,9 +46,8 @@ export default function Weather() {
   }
   
  
-   if (received) {
+if (received) {
     return (
-      <card>
       <div className="temperatureNow">
         {form}
         <h2>{city}</h2>
@@ -55,12 +58,12 @@ export default function Weather() {
           <li>Visibility: {weather.visibility}m</li>
         </ul>
       </div>
-    </card>
-      
     );
   } else {
     return form;
   }
+ 
+   
 } 
 
 
