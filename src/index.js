@@ -9,11 +9,16 @@ import "./App.css";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <h2> Homewo </h2>
-    <Container fluid> 
+    <h2> Homework </h2>
+     <div className="container">
       <Weather />
-    </Container>
-    <small> est</small>
+    </div>
+     <small>
+        This project was coded by Elena and is open-sourced on{" "}
+        <a href="https://github.com/elena-ni/weather-react" target="_blank" rel="noreferrer">
+          Github
+        </a>
+      </small>
    
   </StrictMode>,
   

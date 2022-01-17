@@ -12,7 +12,7 @@ export default function Weather() {
   let [received, setReceived] = useState(false);
 
   let form = (
-    <Row  xs={2} md={4} lg={6}>
+    <Row>
       <Col>
     <form  onSubmit={handleSubmit}>
       <input className="searchfield"

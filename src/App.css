@@ -1,5 +1,12 @@
-container {
-  width: 500px;
-  background-color: blacks;
-  border: 2px solid rgb(250, 222, 63);
+.container {
+  margin: 20px;
+  padding: 20px;
+  border: 2 px green;
+  box-shadow: hotpink;
+
+  border-radius: 5px;
+}
+
+small {
+  margin-left: 20px;
 }
